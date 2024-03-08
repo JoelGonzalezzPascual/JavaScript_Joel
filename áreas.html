@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <H1>Calcular las areas</H1>
+            <P>Circulo</P>
+        <script>
+            var circulot;
+            var lado;
+            var circulol;
+//Circulo en tabla
+            document.write("<table border=1>");
+            circulot=parseInt(prompt("Dame radio en tabla"));
+            area=Math.PI*circulot * circulot;
+            perimetro=2*Math.PI*circulot;
+            
+            document.write("<tr><td>")
+            document.write( "El area es=",area, "<br>");
+            document.write("</td></td> <tr><td>")  
+            document.write( "El perimetro es=",perimetro,"<br>");
+            document.write("</td></tr>") 
+            document.write("</table>");
+            
+            circulol=parseInt(prompt("Dame radio en lista"));
+            areal=Math.PI*circulol * circulol;
+            perimetrol=2*Math.PI* circulol;
+
+            document.write("<ul><li> El area es=",areal, "</li><li>"); 
+            document.write( "El perimetro es=",perimetrol,"</li></ul><br>");
+
+            lado=parseInt(prompt("Dame radio para el cuadrado"));
+            areaC=lado*lado;
+            perimetroC=4*lado;
+            document.write( "El area es=",areaC, "<br>");
+            document.write( "El perimetro es=",perimetroC,"<br>");
+        </script>
+    </body>
+</html>

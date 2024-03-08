@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+          var a=[5,3,1,10]
+          var b=["Maria","Pepe","Luis","Ana"]
+          var i;
+          var min= 1000;
+          var max= 0;
+          var sumaNotas = 0;
+          i=0;
+          while (i < a.length){
+            document.write("<table border=1>","<tr><td>Alumno</td>","<td>Nota</td></tr>","<tr><td>",b[i],"</td><td>",a[i],"</td></tr>","</table>");
+            
+            if(a[i]<min){
+                min=a[i]
+            }
+            if(a[i]>max){
+                max=a[i]
+            }
+            sumaNotas += a[i];
+            i=i+1;
+          }
+          var media = sumaNotas / a.length;
+          document.write( "<br>La nota minima es " ,min,"<br>")
+          document.write( "La nota maxima es " ,max, "<br>")
+          document.write( "La nota media es " , media.toFixed(2))
+        
+        </script>
+    </body>
+</html>
